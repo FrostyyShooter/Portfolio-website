@@ -8,13 +8,14 @@
 		<link rel="icon" href="Assets/Images/Logo DW.png" type="image/x-icon" />
 		<!-- Add CSS -->
 		<link rel="stylesheet" href="Assets/CSS/styles.css" />
-		<!-- Add CSS specifically for index.html -->
-		<link rel="stylesheet" href="" />
+		<!-- Add CSS specifically for HTML file -->
+		<link rel="stylesheet" href="Assets/CSS/index.css" />
 		<!-- Add JS -->
 		<script src=""></script>
 	</head>
 	<body>
 		<!-- Nav bar -->
+		<!-- Styles.CSS -->
 		<nav>
 			<!-- logo -->
 			<a href="index.html"
@@ -25,20 +26,21 @@
 			/></a>
 			<div class="navLinks">
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="">Services</a></li>
-					<li><a href="">Resume</a></li>
-					<li><a href="">Projects</a></li>
-					<li><a href="">Contact</a></li>
+					<li class="navItems"><a href="index.html">Home</a></li>
+					<li class="navItems"><a href="">Services</a></li>
+					<li class="navItems"><a href="">Resume</a></li>
+					<li class="navItems"><a href="">Projects</a></li>
+					<li class="navItems"><a href="">Contact</a></li>
 					<!-- Make this a different style button -->
 					<li class="hireMe"><a href="">Hire me</a></li>
 				</ul>
 			</div>
 		</nav>
 		<!-- Main content -->
+		<!-- Index.CSS -->
 		<!-- First section -->
 		<section class="firstSection">
-			<div>
+			<div class="firstSectionText">
 				<h2>Front-end Developer</h2>
 				<h1>Hi I'm Devon Weijand</h1>
 				<p>
@@ -51,9 +53,7 @@
 					quaerat omnis doloremque, accusantium nihil.
 				</p>
 			</div>
-			<div>
-				<img src="" alt="Profile Picture" />
-			</div>
+			<img src="Assets/Images/1722726590154.jpg" alt="Profile Picture" />
 		</section>
 		<!-- Second section -->
 		<section class="secondSection">
@@ -80,7 +80,10 @@
 		</section>
 		<footer>
 			<!-- Here should be the footer -->
-			Disclaimer and stuff
+			<p>
+				This website is created by
+				<span style="text-decoration: underline">Devon Weijand</span>
+			</p>
 		</footer>
 	</body>
 </html>

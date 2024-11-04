@@ -1,32 +1,92 @@
+/* Variables and default settings */
 :root {
-	--background: #262433;
-	--text: #fff;
-	--accent: #70c6ff;
+	--background: #101827;
+	--backgroundAccent: #1b2941;
+	--textWhite: #fff;
+	--textBlack: #000;
+	--accent: #a1d9ff;
+	--selected: #70c6ff;
+	--selected2: #006cb3;
 }
-body {
+* {
 	padding: 0;
 	margin: 0;
+	font-family: "Poppins", sans-serif;
+}
+@font-face {
+	font-family: "Poppins";
+	src: url("Assets/Fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+}
+body {
+	background-color: var(--background);
+	color: var(--textWhite);
 }
 
+/* Navbar */
 nav {
+	position: absolute;
+	height: 70px;
+	width: 100vw;
+	max-width: 96%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0.5% 2%;
-	background-color: #f00;
+	padding-inline: 2%;
+	/* need to rework the color */
+	background-color: var(--backgroundAccent);
+}
+nav a img {
+	vertical-align: middle;
+	border-radius: 50%;
+	transition: 200ms;
+}
+nav a img:hover {
+	border-radius: 50%;
+	box-shadow: 3px 3px 5px var(--selected), -3px 3px 5px var(--selected),
+		3px -3px 5px var(--selected), -3px -3px 5px var(--selected);
 }
 
 .navLinks ul li {
 	display: inline-block;
 }
-
-.navLinks ul li a {
-	color: #000;
-	text-decoration: none;
+.navItems {
+	margin-right: 5px;
 }
-
-.hireMe {
-	background-color: #70c6ff;
+.navItems a,
+.hireMe a {
 	padding: 0.5em 1em;
 	border-radius: 1em;
+	color: var(--textWhite);
+	text-decoration: none;
+	transition: 200ms;
+}
+.navItems a:hover {
+	/* background-color: var(--selected);
+	color: var(--textBlack); */
+	box-shadow: 3px 3px 5px var(--selected), -3px 3px 5px var(--selected),
+		3px -3px 5px var(--selected), -3px -3px 5px var(--selected);
+}
+
+.hireMe a {
+	text-decoration: none;
+	/* need to rework the color */
+	color: var(--textBlack);
+	background-color: var(--accent);
+	transition: 200ms;
+}
+.hireMe a:hover {
+	color: var(--textWhite);
+	/* background-color: var(--selected2); */
+	background-color: transparent;
+	box-shadow: 3px 3px 5px var(--selected), -3px 3px 5px var(--selected),
+		3px -3px 5px var(--selected), -3px -3px 5px var(--selected);
+}
+
+/* Footer */
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
 }

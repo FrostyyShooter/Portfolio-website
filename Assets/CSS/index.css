@@ -1,0 +1,22 @@
+/* Index Specific CSS Properties */
+
+/* Main Content */
+.firstSection {
+	display: flex;
+	justify-content: space-between;
+	padding: 10% 10%;
+}
+.firstSectionText {
+	width: 30%;
+}
+.firstSection img {
+	width: 20%;
+	border-radius: 50%;
+}
+
+.secondSection {
+	background-color: var(--backgroundAccent);
+	display: flex;
+	justify-content: space-between;
+	padding: 5% 10%;
+}
